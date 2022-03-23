@@ -1,0 +1,67 @@
+body{
+    background:none;
+}
+.wrap{
+    width: 1100px;
+    margin:40px auto;
+    display: flex;
+    justify-content: center;
+}
+.tarjeta-wrap{
+    margin: 10px;
+    -webkit-perspective: 800;
+    perspective: 800;
+    
+}
+
+.tarjeta{
+    width: 300px;
+    height: 350px;
+    background: #E6D3B5;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: .7s ease;
+    -webkit-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+    -moz-box-shadow:0px 10px 15px -5px rgba(10, 10, 10, 0.65);
+    box-shadow:0px 10px 15px -5px rgba(10, 10, 10, 0.65) ;
+    
+}
+.adelante, .atras{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    top: 0;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+
+
+}
+.adelantes{
+    width: 100%;
+}
+.atras{
+    transform:rotateY(180deg);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.tarjeta-wrap:hover .tarjeta{
+    transform:rotateY(180deg);
+}
+.cart1{
+    background-size: cover;
+  
+}
+.cart2{
+
+    background-size: cover;}
+.cart3{
+    background-image:url(imegenes/taza.jpg);
+    background-size: cover;
+}
